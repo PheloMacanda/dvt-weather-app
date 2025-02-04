@@ -31,8 +31,18 @@ module.exports = function (plop) {
             },
             {
                 type: 'add',
+                path: 'app/{{kebabCase name}}/components/{{pascalCase name}}.tsx',
+                templateFile: 'plop_templates/component.hbs'
+            },
+            {
+                type: 'add',
+                path: 'app/{{kebabCase name}}/components/index.ts',
+                templateFile: 'plop_templates/component-index.hbs'
+            },
+            {
+                type: 'add',
                 path: 'app/{{kebabCase name}}/__tests__/{{kebabCase name}}.test.tsx',
-                templateFile: 'plop_template/module-test.hbs'
+                templateFile: 'plop_template/component-test.hbs'
             },
             {
                 type: 'add',
