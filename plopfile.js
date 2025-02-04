@@ -11,11 +11,6 @@ module.exports = function (plop) {
         actions: [
             {
                 type: 'add',
-                path: 'app/{{kebabCase name}}/screens/index.tsx',
-                templateFile: 'plop_templates/screen.hbs'
-            },
-            {
-                type: 'add',
                 path: 'app/{{kebabCase name}}/services/index.ts',
                 template: 'plop_templates/service.hbs'
             },
@@ -26,7 +21,7 @@ module.exports = function (plop) {
             },
             {
                 type: 'add',
-                path: 'app/{{kebabCase name}}/components/{{pascalCase name}}.tsx',
+                path: 'app/{{kebabCase name}}/components/{{pascalCase name}}Base.tsx',
                 templateFile: 'plop_templates/component.hbs'
             },
             {
