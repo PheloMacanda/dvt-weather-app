@@ -5,12 +5,12 @@ import {getStorage} from 'firebase/storage';
 import AsyncStorage from '@react-native-async-storage/async-storage'; // Import AsyncStorage
 
 const firebaseConfigDev = {
-  apiKey: "AIzaSyAgaoylOp9UBYXLJFo0zVw_mFcqRSxd8P4",//process.env.REACT_APP_API_URL_DEV,
-  authDomain: "dvt-weather-2025.firebaseapp.com",//process.env.REACT_APP_AUTH_DOMAIN_DEV,
-  projectId: "dvt-weather-2025",//process.env.REACT_APP_PROJECT_ID_DEV,
-  storageBucket: "dvt-weather-2025.firebasestorage.app",//process.env.REACT_APP_STORAGE_BUCKET_DEV,
-  messagingSenderId: "780881340382", //process.env.REACT_APP_MESSAGING_SENDER_ID_DEV,
-  appId: "1:780881340382:web:8f6f260ef05680e71bdf4f",//process.env.REACT_APP_APP_ID_DEV,
+  apiKey: process.env.EXPO_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.EXPO_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.EXPO_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.EXPO_PUBLIC_FIREBASE_APP_ID,
   appVerificationDisabledForTesting: true,
 };
 
