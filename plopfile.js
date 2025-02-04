@@ -22,12 +22,7 @@ module.exports = function (plop) {
             {
                 type: 'add',
                 path: 'app/{{kebabCase name}}/hooks/index.ts',
-                template: 'plop_templates/hook.hbs'
-            },
-            {
-                type: 'add',
-                path: 'app/{{kebabCase name}}/{{kebabCase name}}Routes.ts',
-                templateFile: 'plop_templates/routes.hbs'
+                templateFile: 'plop_templates/hook.hbs'
             },
             {
                 type: 'add',
@@ -42,12 +37,12 @@ module.exports = function (plop) {
             {
                 type: 'add',
                 path: 'app/{{kebabCase name}}/__tests__/{{kebabCase name}}.test.tsx',
-                templateFile: 'plop_template/component-test.hbs'
+                templateFile: 'plop_templates/component-test.hbs'
             },
             {
                 type: 'add',
                 path: 'app/{{kebabCase name}}/screens/{{pascalCase name}}.tsx',
-                templateFile: 'plop_template/screen.hbs'
+                templateFile: 'plop_templates/screen.hbs'
             }
         ]
     });
