@@ -12,7 +12,7 @@ module.exports = function (plop) {
             {
                 type: 'add',
                 path: 'app/{{kebabCase name}}/services/index.ts',
-                template: 'plop_templates/service.hbs'
+                templateFile: 'plop_templates/service.hbs'
             },
             {
                 type: 'add',
@@ -55,7 +55,7 @@ module.exports = function (plop) {
             {
                 type: 'add',
                 path: 'components/{{pascalCase name}}.tsx',
-                templateFile: 'plop_template/component.hbs'
+                templateFile: 'plop_templates/component.hbs'
             }
         ]
     })

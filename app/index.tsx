@@ -1,14 +1,11 @@
-import { Text, TouchableOpacity, View } from "react-native";
+import { Text, View } from "react-native";
 import { Link } from 'expo-router';
 import { screens } from "@/constants";
+import i18n from "@/i18n";
 
 export default function Index() {
 
-  // const router = useRouter();
-
-  // const navigateToLogin = () => {
-  //   router.push(screens.LOGIN);
-  // };
+  const { t } = i18n;
 
   return (
     <View
@@ -18,7 +15,7 @@ export default function Index() {
       <Link href={{
         pathname: screens.LOGIN
       }}>
-        <Text>Login</Text>
+        <Text>{t("login")}</Text>
       </Link>
     </View>
   );
