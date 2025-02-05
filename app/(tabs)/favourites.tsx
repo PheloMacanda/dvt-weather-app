@@ -1,11 +1,11 @@
 import { View, Text } from 'react-native';
 
-const {{pascalCase name}} = () => {
+const Favourites = () => {
   return (
     <View className='flex-1 justify-center items-center'>
-      <Text>{{pascalCase name}} Screen View</Text>
+      <Text>Favourites Screen</Text>
     </View>
   );
 };
 
-export default {{pascalCase name}};
+export default Favourites;

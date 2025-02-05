@@ -1,9 +1,9 @@
 import { render } from '@testing-library/react-native';
-import { {{pascalCase name}} } from '../components';
+import {{pascalCase name}}Base from '../components/{{pascalCase name}}Base';
 
 describe("{{pascalCase name}} Component", () => {
   it("renders correctly", () => {
-    const { getByText } = render(<{{pascalCase name}} />);
+    const { getByText } = render(<{{pascalCase name}}Base />);
     expect(getByText("{{pascalCase name}} Component")).toBeTruthy();
   });
 });

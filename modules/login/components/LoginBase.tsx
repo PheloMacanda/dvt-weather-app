@@ -1,12 +1,12 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 
-const {{pascalCase name}}Base = () => {
+const LoginBase = () => {
   return (
     <View className='p-2 bg-primary-100'>
-      <Text>{{pascalCase name}} Base Component</Text>
+      <Text>Login Base Component</Text>
     </View>
   );
 };
 
-export default {{pascalCase name}}Base;
+export default LoginBase;

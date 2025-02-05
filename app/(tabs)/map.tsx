@@ -1,11 +1,11 @@
 import { View, Text } from 'react-native';
 
-const {{pascalCase name}} = () => {
+const Map = () => {
   return (
     <View className='flex-1 justify-center items-center'>
-      <Text>{{pascalCase name}} Screen View</Text>
+      <Text>Map Screen</Text>
     </View>
   );
 };
 
-export default {{pascalCase name}};
+export default Map;

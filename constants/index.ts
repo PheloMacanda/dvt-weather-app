@@ -9,10 +9,23 @@ export const queryConfig = {
     cacheTime: CACHE_TIME_MS,
 };
 
+export const colorTheme = {
+    primary: '#EA7474',  
+    secondary: '#4A90E2', 
+    cloudy: '#57575D',
+    textPrimary: '#FFFFFF', 
+    textSecondary: '#BDC3C7', 
+    card : {
+        background: '#444444',
+        shadow: '#000000',
+    },
+};
+
 export const screens: any = {
     WEATHER: '/weather/screens/Weather',
     DETAILS: '/details/screens/Details',
-    LOGIN: '/login/screens/Login'
+    FAVOURITES: '/favourites/screens/Favourites',
+    LOGIN: '/login/screens/Login',
 };
 
 const KELVIN_TO_CELSIUS = 273.15;
