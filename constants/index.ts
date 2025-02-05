@@ -1,3 +1,5 @@
+// Constant representing the key used to store user authentication state.
+export const user_auth_state = 'user_v2';
 
 const STALE_TIME_MS = 1000 * 60 * 5; 
 const RETRY_COUNT = 3;
@@ -22,10 +24,10 @@ export const colorTheme = {
 };
 
 export const screens: any = {
-    WEATHER: '/weather/screens/Weather',
-    DETAILS: '/details/screens/Details',
-    FAVOURITES: '/favourites/screens/Favourites',
-    LOGIN: '/login/screens/Login',
+    WEATHER: '/(tabs)',
+    PROFILE: '/profile',
+    FAVOURITES: '/favourites',
+    LOGIN: '/login',
 };
 
 const KELVIN_TO_CELSIUS = 273.15;
@@ -35,3 +37,17 @@ export const weather = {
 }
 
 export const CURRENT_WEATHER_LAST_UPDATE = 'CURRENT_WEATHER_LAST_UPDATE';
+
+/*
+    Login Screen Based Constants
+*/
+
+export const ERROR_MESSAGES = {
+    REQUIRED_FIELDS: 'Email and password are required',
+    INVALID_CREDENTIALS: 'Wrong email or password',
+};
+
+export const PLACEHOLDERS = {
+    EMAIL: 'Email',
+    PASSWORD: 'Password',
+};

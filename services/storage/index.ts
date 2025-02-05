@@ -43,6 +43,7 @@ export const retrieveUserData = async (key: StorageKey): Promise<UserData> => {
       
       return JSON.parse(result);
     } catch (error) {
+      console.log('err', error)
       throw new Error('Failed to retrieve user data');
     }
 };

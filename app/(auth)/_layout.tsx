@@ -1,5 +1,6 @@
 import { Stack } from 'expo-router';
 import i18n from '@/i18n';
+import { colorTheme } from '@/constants';
 
 const AuthLayout = () => {
 
@@ -11,7 +12,13 @@ const AuthLayout = () => {
                 name='index'
                 options={{
                     title: t('authIndex'),
-                    headerTitle: t('authIndex')
+                    headerTitle: t('authIndex'),
+                    headerTitleStyle: {
+                        color: colorTheme.textPrimary
+                    },
+                    headerStyle: {
+                        backgroundColor: colorTheme.primary
+                    }
                 }}
             />
             <Stack.Screen 
