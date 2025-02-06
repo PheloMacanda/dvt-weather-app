@@ -4,16 +4,16 @@ import { IFavourite, AddFavouriteResponse } from '@/interfaces/favourite';
 
 const favService = () => {}
 /**
- * Adds a favorite weather location for a user to the database.
+ * Adds a favourite weather location for a user to the database.
  *
- * @param userFavorite - An object representing the user's favorite weather location details.
+ * @param userFavourite - An object representing the user's favourite weather location details.
  * @returns A promise that will be resolves to an object which will then indicate that the api call was a success.
  * @throws Will throw an error if the api fails.
  */
 
-export const addFavorite = async (userFavorite: IFavourite): Promise<AddFavouriteResponse> => {
+export const addFavourite = async (userFavorite: IFavourite): Promise<AddFavouriteResponse> => {
     try {
-        const favoritesCollectionRef = collection(firestore, "favorites");
+        const favoritesCollectionRef = collection(firestore, "favourites");
         const docRef = await addDoc(favoritesCollectionRef, userFavorite);
 
         return { status: 'success', message: 'Favorite successfully added', docId: docRef.id };
@@ -25,7 +25,7 @@ export const addFavorite = async (userFavorite: IFavourite): Promise<AddFavourit
 };
 
 /**
- * Fetches the data(favorites) of a user based on their userId.
+ * Fetches the data(favourites) of a user based on their userId.
  *
  * @param userId - The unique identifier of the user whose data you want to fetch.
  * @returns A promise that resolves to an array of user data objects.
@@ -34,7 +34,7 @@ export const addFavorite = async (userFavorite: IFavourite): Promise<AddFavourit
 export const getUserData = async (userId: string): Promise<Array<IFavourite>> => {
     try {
 
-        const favoritesCollectionRef = collection(firestore, "favorites");
+        const favoritesCollectionRef = collection(firestore, "favourites");
         const q = query(favoritesCollectionRef, where("userId", "==", userId));
 
         const querySnapshot = await getDocs(q);

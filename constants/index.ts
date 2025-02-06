@@ -13,7 +13,9 @@ export const queryConfig = {
 
 export const colorTheme = {
     primary: '#EA7474',  
-    secondary: '#4A90E2', 
+    secondary: '#4A90E2',
+    green: '#47AB2F',
+    lightGreen: '#71DA57',
     cloudy: '#57575D',
     textPrimary: '#FFFFFF', 
     textSecondary: '#BDC3C7', 

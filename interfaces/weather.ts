@@ -37,7 +37,7 @@ interface ISystem {
     sunset: number;
 }
 
-interface IWeatherListItem {
+export interface IWeatherListItem {
     dt: number;
     main: IPrimary;
     weather: IWeather[];

@@ -19,7 +19,7 @@ export const getCurrentWeather = async (lat: number, lng: number): Promise<IWeat
       params: {
         lat,
         lon: lng,
-        appid: process.env.EXPO_PUBLIC_WEATHER_API_KEY,
+        appid: process.env.EXPO_PUBLIC_WEATHER_API_KEY
       },
     });    
 
@@ -56,7 +56,7 @@ export const getForecastWeather = async (lat: number, lng: number): Promise<IWea
       params: {
         lat,
         lon: lng,
-        appid: process.env.EXPO_PUBLIC_WEATHER_API_KEY,
+        appid: process.env.EXPO_PUBLIC_WEATHER_API_KEY
       },
     });
 
