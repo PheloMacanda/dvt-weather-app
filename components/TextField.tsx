@@ -61,7 +61,7 @@ const TextField: FC<TextFieldProps> = ({
       )
       }
       {passwordInput && (
-        <TouchableOpacity className={`${toggleButtonStyle}`} onPress={togglePasswordVisibility}>
+        <TouchableOpacity className={`${toggleButtonStyle}`} onPress={togglePasswordVisibility} role='button' accessibilityRole='button'>
           <Ionicons name={isPasswordVisible ? 'eye' : 'eye-off'} />
         </TouchableOpacity>
       )}

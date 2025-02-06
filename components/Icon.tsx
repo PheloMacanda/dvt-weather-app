@@ -8,7 +8,7 @@ interface IconProps {
 const Icon:FC<IconProps> = ({
     path
 }) => (
-    <Image source={path} className='w-8 h-8' />
+    <Image source={path} className='w-8 h-8' role='img' />
 );
 
 export default Icon;

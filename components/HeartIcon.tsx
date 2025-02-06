@@ -72,7 +72,7 @@ const HeartIcon:FC<HeartIconProps> = ({
     }
 
     return (
-        <TouchableOpacity onPress={handleFavourite} className='absolute top-3 left-3 pt-4'>
+        <TouchableOpacity onPress={handleFavourite} className='absolute top-3 left-3 pt-4' role='button' accessibilityRole='button'>
             <Ionicons name='heart' size={40} color={colorTheme.primary} />
         </TouchableOpacity>
     )
